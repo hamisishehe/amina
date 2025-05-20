@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of a passionate web developer." />
+  <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio" />
+  <meta name="author" content="Your Name" />
+  <title>Home | Your Name</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body onload="greetUser()">
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <ul class="horizontal-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="three-column">
+    <article>
+      <h2>Project One</h2>
+      <img src="images/pro1.jpeg" alt="Screenshot of Project 1" />
+      <button onclick="toggleDetails('p1')">Details</button>
+      <p id="p1" style="display: none;">Built using HTML/CSS/JS, this project showcases XYZ...</p>
+    </article>
+    <article>
+      <h2>Project Two</h2>
+      <img src="images/pro2.jpeg" alt="Screenshot of Project 2" />
+      <button onclick="toggleDetails('p2')">Details</button>
+      <p id="p2" style="display: none;">This is a CRUD app built with JavaScript.</p>
+    </article>
+    <article>
+      <h2>Project Three</h2>
+      <img src="images/pro3.jpeg" alt="Screenshot of Project 3" />
+      <button onclick="toggleDetails('p3')">Details</button>
+      <p id="p3" style="display: none;">Features a mobile-first responsive design.</p>
+    </article>
+  </main>
+  
+  <footer>&copy; 2025 Your Name</footer>
+</body>
+</html>

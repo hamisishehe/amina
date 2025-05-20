@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of a passionate web developer." />
+  <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio" />
+  <meta name="author" content="Your Name" />
+  <title>Home | Your Name</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body onload="greetUser()">
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <ul class="horizontal-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+    </nav>
+  </header>
+  <form>
+    <h2>Survey</h2>
+  
+    <label>How did you find me?</label><br/>
+    <input type="radio" name="source" value="google" required /> Google
+    <input type="radio" name="source" value="linkedin" /> LinkedIn
+  
+    <br/><label>Technologies you like:</label><br/>
+    <input type="checkbox" name="tech" value="html" /> HTML
+    <input type="checkbox" name="tech" value="css" /> CSS
+    <input type="checkbox" name="tech" value="js" /> JavaScript
+  
+    <br/><label for="feedback">Your Feedback:</label><br/>
+    <textarea id="feedback" required></textarea>
+  
+    <br/><button type="submit">Send Feedback</button>
+  </form>
+  
+  
+  <footer>&copy; 2025 Your Name</footer>
+</body>
+</html>
